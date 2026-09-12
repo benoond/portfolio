@@ -1,117 +1,865 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benedict Ondoma | Systems Architect & Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
+
+    <title>Benedict Ondoma | Full-Stack Developer & Engineer</title>
+
+    <meta name="description"
+          content="Portfolio of Benedict Ejeh Ondoma — Full-Stack Developer, Computer Engineer and Electrical/Electronics Engineer specializing in Laravel, PHP, MySQL, JavaScript, IoT, embedded systems and AutoCAD.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
 </head>
-<body class="bg-slate-950 text-slate-200 font-sans">
 
+<body>
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 glass border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-blue-500">Benedict Ejeh Ondoma</span>
-            <div class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="tel:+2348034369616" class="hover:text-blue-400 transition"><i class="fas fa-phone mr-1"></i> +234 803 436 9616</a>
-                <a href="mailto:benoond@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope mr-1"></i> benoond@gmail.com</a>
-            </div>
-            <a href="mailto:benoond@gmail.com" class="bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm">Hire Me</a>
+<!-- ================= NAVIGATION ================= -->
+
+<header class="header">
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">
+            BO<span>.</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </div>
+
+        <a href="#contact" class="nav-button">
+            Hire Me
+        </a>
+
     </nav>
+</header>
 
-    <!-- Hero -->
-    <!-- Hero -->
-    <header class="pt-40 pb-20 px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
-            Systems Architecture &<br>Industrial Innovation.
-        </h1>
-        
-        <!-- Credentials Badge -->
-        <div class="flex justify-center gap-4 mb-8 text-sm font-semibold tracking-widest text-slate-500 uppercase">
-            <span class="bg-slate-900 px-4 py-1 rounded-full border border-slate-800">B.Eng Electrical/Electronics</span>
-            <span class="bg-slate-900 px-4 py-1 rounded-full border border-slate-800">M.Eng Computer Engineering</span>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                FULL-STACK DEVELOPER • COMPUTER ENGINEER
+            </p>
+
+            <h1>
+                I build software
+                <span>that solves real problems.</span>
+            </h1>
+
+            <p class="hero-description">
+                I'm Benedict Ejeh Ondoma, a Computer Engineer and Full-Stack
+                Developer specializing in Laravel, PHP, MySQL and JavaScript,
+                with a strong background in electrical/electronics engineering,
+                embedded systems and IoT.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Let's Talk
+                </a>
+
+            </div>
+
+            <div class="hero-tech">
+
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>IoT</span>
+                <span>AutoCAD</span>
+
+            </div>
+
         </div>
 
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
-            Full-stack developer building scalable educational infrastructure and high-performance offline software. Expert in circuit logic, AutoCAD design, and embedded systems.
+
+        <div class="hero-card">
+
+            <div class="status">
+                <span></span>
+                Available for opportunities
+            </div>
+
+            <div class="profile-circle">
+                BO
+            </div>
+
+            <h3>
+                Benedict Ejeh Ondoma
+            </h3>
+
+            <p>
+                M.Eng. Computer Engineering
+            </p>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>17+</strong>
+                    <small>Years Engineering</small>
+                </div>
+
+                <div>
+                    <strong>10+</strong>
+                    <small>Years Teaching</small>
+                </div>
+
+                <div>
+                    <strong>Full</strong>
+                    <small>Stack Development</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                ABOUT ME
+            </p>
+
+            <h2>
+                Engineering thinking meets software development.
+            </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am a versatile technical professional with a background
+                    spanning Computer Engineering, Electrical/Electronics
+                    Engineering, software development, networking, embedded
+                    systems and technical education.
+                </p>
+
+                <p>
+                    My software development experience includes building
+                    database-driven applications using PHP, Laravel, MySQL
+                    and JavaScript. I particularly enjoy developing systems
+                    that automate processes, manage information and make
+                    complex operations easier to handle.
+                </p>
+
+                <p>
+                    My engineering background gives me a practical approach
+                    to problem solving. I don't only think about software —
+                    I understand systems, hardware, networks, electrical
+                    installations and how technology interacts with the
+                    physical world.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    Let's work together →
+                </a>
+
+            </div>
+
+
+            <div class="about-cards">
+
+                <div class="mini-card">
+                    <span>01</span>
+                    <h3>Software Development</h3>
+                    <p>
+                        Backend systems, database applications,
+                        APIs and responsive web applications.
+                    </p>
+                </div>
+
+                <div class="mini-card">
+                    <span>02</span>
+                    <h3>Engineering</h3>
+                    <p>
+                        Electrical systems, electronics,
+                        instrumentation and technical design.
+                    </p>
+                </div>
+
+                <div class="mini-card">
+                    <span>03</span>
+                    <h3>Education</h3>
+                    <p>
+                        Lecturer, technical trainer and student
+                        project supervisor.
+                    </p>
+                </div>
+
+                <div class="mini-card">
+                    <span>04</span>
+                    <h3>IoT & Embedded Systems</h3>
+                    <p>
+                        Arduino-based embedded systems,
+                        sensors and practical automation.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section dark-section" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                TECHNICAL SKILLS
+            </p>
+
+            <h2>
+                Tools I use to turn ideas into systems.
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card featured-skill">
+
+                <div class="skill-icon">
+                    PHP
+                </div>
+
+                <h3>
+                    Laravel & PHP
+                </h3>
+
+                <p>
+                    Backend development, MVC architecture, authentication,
+                    database-driven applications, business logic and
+                    web application development.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MVC</span>
+                    <span>REST</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    SQL
+                </div>
+
+                <h3>
+                    MySQL & Databases
+                </h3>
+
+                <p>
+                    Database design, relationships, queries,
+                    data management and application integration.
+                </p>
+
+                <div class="skill-tags">
+                    <span>MySQL</span>
+                    <span>SQL</span>
+                    <span>Database Design</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    JS
+                </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+                    Interactive interfaces, DOM manipulation,
+                    frontend functionality and web application logic.
+                </p>
+
+                <div class="skill-tags">
+                    <span>JavaScript</span>
+                    <span>DOM</span>
+                    <span>Frontend</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    HW
+                </div>
+
+                <h3>
+                    Engineering & IoT
+                </h3>
+
+                <p>
+                    Arduino, embedded systems, electronics,
+                    circuit design and electrical installations.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Arduino</span>
+                    <span>IoT</span>
+                    <span>Embedded</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    CAD
+                </div>
+
+                <h3>
+                    AutoCAD
+                </h3>
+
+                <p>
+                    2D and 3D technical drafting, engineering drawings
+                    and design documentation.
+                </p>
+
+                <div class="skill-tags">
+                    <span>2D</span>
+                    <span>3D</span>
+                    <span>Technical Drawing</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    NET
+                </div>
+
+                <h3>
+                    Networking & IT
+                </h3>
+
+                <p>
+                    LAN setup, computer maintenance, troubleshooting,
+                    hardware support and network configuration.
+                </p>
+
+                <div class="skill-tags">
+                    <span>LAN</span>
+                    <span>Networking</span>
+                    <span>Hardware</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                SELECTED WORK
+            </p>
+
+            <h2>
+                Software built around real-world problems.
+            </h2>
+
+            <p>
+                My projects combine software engineering, databases,
+                education and practical automation.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <article class="project-card project-large">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        EDUCATION TECHNOLOGY
+                    </p>
+
+                    <h3>
+                        School Management & Academic Systems
+                    </h3>
+
+                    <p>
+                        Database-driven systems for managing student
+                        records, academic results, admissions and
+                        institutional information.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        EDUCATIONAL SOFTWARE
+                    </p>
+
+                    <h3>
+                        CGPA Calculation System
+                    </h3>
+
+                    <p>
+                        Software designed to simplify academic performance
+                        calculations and reduce manual errors in CGPA
+                        processing.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        EMBEDDED SYSTEMS
+                    </p>
+
+                    <h3>
+                        Arduino & IoT Projects
+                    </h3>
+
+                    <p>
+                        Embedded and IoT solutions involving sensors,
+                        microcontrollers, circuit logic and practical
+                        automation.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Arduino</span>
+                        <span>IoT</span>
+                        <span>Electronics</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        WEB APPLICATIONS
+                    </p>
+
+                    <h3>
+                        Custom Business Applications
+                    </h3>
+
+                    <p>
+                        Responsive applications designed to automate
+                        workflows, manage information and provide
+                        practical digital solutions.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>SQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="section light-section" id="experience">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                EXPERIENCE
+            </p>
+
+            <h2>
+                A career across engineering, education and technology.
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2014 — Present
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Lecturer
+                    </h3>
+
+                    <h4>
+                        Benue State Polytechnic, Ugbokolo
+                    </h4>
+
+                    <p>
+                        Teaching computer, electrical and electronics
+                        engineering courses, supervising student projects,
+                        preparing laboratory materials and coordinating
+                        industrial training activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2010 — 2011
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Network Engineer & AutoCAD Teacher
+                    </h3>
+
+                    <h4>
+                        Brifek Technology, Nyanya Abuja
+                    </h4>
+
+                    <p>
+                        Maintained LAN networks, provided computer support
+                        and taught AutoCAD fundamentals and technical
+                        drafting.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2008 — 2009
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Electrical / Instrumentation Engineer
+                    </h3>
+
+                    <h4>
+                        Shell Petroleum Development Company (SPDC), Warri
+                    </h4>
+
+                    <p>
+                        Worked on instrumentation, electrical systems,
+                        flow station electrification, calibration,
+                        maintenance and intrinsically safe systems
+                        within industrial environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                EDUCATION
+            </p>
+
+            <h2>
+                Academic foundation.
+            </h2>
+
+        </div>
+
+
+        <div class="education-grid">
+
+            <div class="education-card">
+
+                <span>2025</span>
+
+                <h3>
+                    M.Eng. Computer Engineering
+                </h3>
+
+                <p>
+                    Abubakar Tafawa Balewa University, Bauchi
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <span>2008</span>
+
+                <h3>
+                    B.Eng. Electrical/Electronic Engineering
+                </h3>
+
+                <p>
+                    Federal University of Agriculture, Makurdi
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container cta">
+
+        <p class="eyebrow">
+            HAVE A PROJECT OR OPPORTUNITY?
         </p>
-    </header>
 
-    <!-- Work Section -->
-    <section id="work" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Digital Infrastructure</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Project Card -->
-            <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition duration-500">
-                <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-graduation-cap"></i></div>
-                <h3 class="text-xl font-bold mb-2">School Portals</h3>
-                <p class="text-slate-400 text-sm mb-6">Robust management systems for student records, results, and admissions deployed across multiple institutions.</p>
-                <div class="flex flex-wrap gap-2 text-xs font-bold text-blue-300">
-                    <span>#LARAVEL</span><span>#PHP</span><span>#MYSQL</span>
+        <h2>
+            Let's build something useful.
+        </h2>
+
+        <p>
+            I'm interested in software development, engineering,
+            educational technology, IoT and technical consulting
+            opportunities.
+        </p>
+
+        <a href="mailto:benoond@gmail.com" class="btn btn-primary">
+            Contact Benedict
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div>
+
+                <p class="eyebrow">
+                    CONTACT
+                </p>
+
+                <h2>
+                    Let's discuss your next project.
+                </h2>
+
+                <p class="contact-description">
+                    Whether you're looking for a Laravel/PHP developer,
+                    a technical engineer, an IoT developer or someone who
+                    can bridge software and engineering, I'd be glad to
+                    discuss the opportunity.
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
+
+                <a href="mailto:benoond@gmail.com" class="contact-item">
+                    <span>Email</span>
+                    benoond@gmail.com
+                </a>
+
+                <a href="tel:+2348034369616" class="contact-item">
+                    <span>Phone</span>
+                    +234 803 436 9616
+                </a>
+
+                <div class="contact-item">
+                    <span>Location</span>
+                    Benue State, Nigeria
                 </div>
-            </div>
-            
-            <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition duration-500">
-                <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-pills"></i></div>
-                <h3 class="text-xl font-bold mb-2">Pharmacy/CBT Logic</h3>
-                <p class="text-slate-400 text-sm mb-6">Offline-first software architecture designed for reliability in mission-critical business environments.</p>
-                <div class="flex flex-wrap gap-2 text-xs font-bold text-blue-300">
-                    <span>#NATIVE_PHP</span><span>#DATA_STRUCTURES</span>
-                </div>
+
             </div>
 
-            <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition duration-500">
-                <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-code-branch"></i></div>
-                <h3 class="text-xl font-bold mb-2">Custom Web Apps</h3>
-                <p class="text-slate-400 text-sm mb-6">Dynamic, responsive web applications built with React and modern DOM manipulation techniques.</p>
-                <div class="flex flex-wrap gap-2 text-xs font-bold text-blue-300">
-                    <span>#REACT</span><span>#DOM_JS</span>
-                </div>
-            </div>
         </div>
-    </section>
 
-    <!-- Hardware Lab -->
-    <section id="lab" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="glass rounded-3xl p-12 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold mb-6">Hardware & Industrial Lab</h2>
-                <p class="text-slate-400 mb-6">Beyond the screen, I bridge the gap between software logic and physical reality. My workflow includes precision mechanical drafting and embedded circuit design.</p>
-                <ul class="space-y-4">
-                    <li class="flex items-center"><i class="fas fa-check text-emerald-400 mr-3"></i> Arduino Embedded Programming</li>
-                    <li class="flex items-center"><i class="fas fa-check text-emerald-400 mr-3"></i> AutoCAD Mechanical Drafting</li>
-                    <li class="flex items-center"><i class="fas fa-check text-emerald-400 mr-3"></i> Logic & Circuit Design</li>
-                </ul>
-            </div>
-            <div class="md:w-1/2 w-full h-64 bg-slate-800 rounded-2xl flex items-center justify-center border border-slate-700">
-                <i class="fas fa-microchip text-7xl text-slate-600"></i>
-            </div>
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-inner">
+
+        <div>
+            <strong>Benedict Ondoma</strong>
+            <p>
+                Full-Stack Developer & Computer Engineer
+            </p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="py-16 text-center border-t border-white/5 bg-slate-950">
-        <div class="max-w-4xl mx-auto px-6">
-            <h3 class="text-2xl font-bold mb-6">Let's Build Something Together.</h3>
-            <p class="text-slate-400 mb-8">Available for projects, consulting, and collaborative engineering.</p>
-            
-            <!-- Socials -->
-            <div class="flex justify-center space-x-8 text-2xl mb-12">
-                <a href="https://github.com/benoond/" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/benedict-ondoma-3755ab126" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:benoond@gmail.com" class="text-slate-400 hover:text-white transition"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+2348034369616" class="text-slate-400 hover:text-white transition"><i class="fas fa-phone"></i></a>
-            </div>
+        <p>
+            © <span id="year"></span> Benedict Ondoma
+        </p>
 
-            <p class="text-slate-600 text-sm">© 2026 Benedict Ondoma. Systems Architect & Developer.</p>
-        </div>
-    </footer>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
